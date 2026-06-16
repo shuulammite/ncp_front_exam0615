@@ -5,11 +5,12 @@ import "./App.css";
 // 배포 환경에서는 Nginx가 /api로 시작하는 요청을 백엔드 서버로 프록시하기 때문에 상대 경로를 사용합니다.
 // 개발 환경에서는 백엔드 서버가 localhost:3000에서 실행 중이라고 가정하고 절대 경로를 사용합니다.
 // 통신할 백엔드 주소를 저장하는 변수
+
 // 클라우드 배포용
-// const API_BASE_URL = "/api";
+const API_BASE_URL = "/api";
 
 // 로컬 개발용(백엔드 서버가 localhost:3000에서-노드서버에서 실행 중이라고 가정)
-const API_BASE_URL = "http://localhost:3000/api";
+// const API_BASE_URL = "http://localhost:3000/api";
 
 function App() {
   const [diaries, setDiaries] = useState([]);
